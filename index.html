@@ -38,19 +38,19 @@
 
                         <div class="memory-title">
                             <h5>Memory</h5>
-                            <button class="btn">8GB unified Memory</button>
-                            <button class="btn">16GB unified Memory</button>
+                            <button onclick="memoryFree()" class="btn">8GB unified Memory</button>
+                            <button onclick="memoryCost()" class="btn">16GB unified Memory</button>
                         </div>
                         <div class="storage-title">
                             <h5>Storage</h5>
-                            <button class="btn">256GB SSD Storage</button>
-                            <button class="btn">512GB SSD Storage</button>
-                            <button class="btn">1TB SSD Storage</button>
+                            <button onclick="storageFree()" class="btn">256GB SSD Storage</button>
+                            <button onclick="storageHalfCost()" class="btn">512GB SSD Storage</button>
+                            <button onclick="storageFullCost()" class="btn">1TB SSD Storage</button>
                         </div>
                         <div class="delivery-title">
                             <h5>Choose your delivery option</h5>
-                            <button class="btn">Friday,AUG 25 Free Prime Delivey</button>
-                            <button class="btn">Friday,AUG 21 Delivey Charge $20</button>
+                            <button onclick="deliveryFree()" class="btn">Friday,AUG 25 Free Prime Delivey</button>
+                            <button onclick="deliveryCost()" class="btn">Friday,AUG 21 Delivey Charge $20</button>
                         </div>
 
                         <!-- Button content end -->
@@ -61,15 +61,15 @@
                             <div class="row">
 
                                 <div class="col-md-8">
-                                    <h6>Best Price <span class="best-price">$1299</span> </h6>
+                                    <h6>Best Price<span id="price-input" class="best-price">$1299</span> </h6>
                                     <hr>
-                                    <h6>Extra Memory Cost <span class="extra-memory">$0</span></h6>
+                                    <h6>Extra Memory Cost<span id="memory-cost" class="extra-memory">$0</span></h6>
                                     <hr>
-                                    <h6>Extra Storage Cost <span class="extra-storage">$0</span></h6>
+                                    <h6>Extra Storage Cost<span id="storage-cost" class="extra-storage">$0</span></h6>
                                     <hr>
-                                    <h6>Delivery Charge <span class="delivery-charge">$0</span></h6>
+                                    <h6>Delivery Charge<span id="delivery-cost" class="delivery-charge">$0</span></h6>
                                     <hr>
-                                    <h6>Total Price <span class="total-price">$1299</span> </h6>
+                                    <h6>Total Price<span id="total-cost" class="total-price">$0</span> </h6>
                                     <hr>
 
                                 </div>
@@ -82,8 +82,8 @@
 
                         <div class="promo-code">
                             <h4>Add Promo Code</h4>
-                            <input type="text">
-                            <button class="apply-btn">Apply</button>
+                            <input id="typed-words" type="text">
+                            <button onclick="applyButton()" class="apply-btn">Apply</button>
                         </div>
                         <!-- promo content end -->
                     </div>
@@ -91,7 +91,7 @@
                 <!-- Total Price content start -->
                 <div>
                     <hr class="total-hr">
-                    <h2>Total: <span>$1299</span> </h2>
+                    <h2>Total: <span id="total-cost">$0</span></h2>
                 </div>
                 <!-- Total Price content end -->
             </div>
@@ -99,7 +99,7 @@
     </main>
     <!-- main end -->
 
-    <script src="mac.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
