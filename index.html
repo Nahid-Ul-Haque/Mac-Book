@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="setStaticValues()">
     <!-- main Start -->
     <main>
         <section>
@@ -61,15 +61,15 @@
                             <div class="row">
 
                                 <div class="col-md-8">
-                                    <h6>Best Price<span id="price-input" class="best-price">$1299</span> </h6>
+                                    <h6>Best Price<span id="price-input" class="best-price"></span> </h6>
                                     <hr>
-                                    <h6>Extra Memory Cost<span id="memory-cost" class="extra-memory">$0</span></h6>
+                                    <h6>Extra Memory Cost<span id="memory-cost" class="extra-memory"></span></h6>
                                     <hr>
-                                    <h6>Extra Storage Cost<span id="storage-cost" class="extra-storage">$0</span></h6>
+                                    <h6>Extra Storage Cost<span id="storage-cost" class="extra-storage"></span></h6>
                                     <hr>
-                                    <h6>Delivery Charge<span id="delivery-cost" class="delivery-charge">$0</span></h6>
+                                    <h6>Delivery Charge<span id="delivery-cost" class="delivery-charge"></span></h6>
                                     <hr>
-                                    <h6>Total Price<span id="total-cost" class="total-price">$0</span> </h6>
+                                    <h6>Total Price<span id="total-cost1" class="total-price"></span> </h6>
                                     <hr>
 
                                 </div>
@@ -91,7 +91,7 @@
                 <!-- Total Price content start -->
                 <div>
                     <hr class="total-hr">
-                    <h2>Total: <span id="total-cost">$0</span></h2>
+                    <h2>Total: <span id="total-cost2"></span></h2>
                 </div>
                 <!-- Total Price content end -->
             </div>
