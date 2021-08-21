@@ -1,0 +1,83 @@
+/* style Stat */
+
+body{
+    margin: 0%;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.memory-title,.storage-title,.delivery-title,.cart-item{
+    margin-top: 50px;
+}
+/* button style start */
+
+h5{
+    font-weight: 700;
+}
+.btn{
+    background-color: white;
+    border: 1px solid black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+/* button style end */
+
+/* price Style start */
+h6{
+    font-weight: 700;
+}
+.best-price{
+    margin-left: 30%;
+}
+.extra-memory{
+    margin-left: 10%;
+}
+.extra-storage{
+    margin-left: 12%;
+}
+.delivery-charge{
+    margin-left: 17%;
+}
+.total-price{
+    margin-left: 28%;
+}
+hr{
+    width: 75%;
+}
+/* price style end */
+
+/* promo code style start */
+.promo-code{
+    margin-top: 20px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.apply-btn{
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.apply-btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+/* promo code style end */
+
+/* total price style start  */
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+.total-hr{
+    width: 100%;
+}
+/* Total price style end */
